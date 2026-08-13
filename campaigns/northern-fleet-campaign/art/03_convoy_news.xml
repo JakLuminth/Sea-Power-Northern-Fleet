@@ -1,0 +1,77 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+
+<Viewbox>
+  <Border Background="White" Width="1000" Padding="30" TextElement.Foreground="Black" TextElement.FontSize="16">
+	<Border.Effect>
+	  <DropShadowEffect />
+	</Border.Effect>
+	<StackPanel Orientation="Vertical">
+
+	  <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="Black"/>
+	  <TextBlock Text="June 15, 1985  |  Late Edition  |  50 Cents" Margin="0,10,0,10" FontSize="18" TextAlignment="Center"/>
+	  <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="Black"/>
+	  <Grid Margin="0,5,0,10">
+		<Rectangle Fill="#1a1a6e" Margin="0,95,0,4"/>
+		<TextBlock Text="The Atlantic Daily" TextAlignment="Center" FontSize="96" FontWeight="Bold" Foreground="White"/>
+	  </Grid>
+	  <TextBlock Text="SERVING THE TRANSATLANTIC COMMUNITY SINCE 1921" TextAlignment="Center" FontSize="13" Margin="0,0,0,8"/>
+	  <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="Black"/>
+
+	  <!-- Lead headline -->
+	  <TextBlock Text="SOVIET SURFACE GROUP DESTROYS ATLANTIC CONVOY — 28 SHIPS LOST" FontWeight="Bold" FontSize="32" TextWrapping="Wrap" TextAlignment="Center" Margin="0,15,0,6"/>
+	  <TextBlock Text="Pentagon confirms attack by surface missiles and submarines; naval escorts overwhelmed" FontSize="20" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,15" FontStyle="Italic"/>
+	  <Rectangle HorizontalAlignment="Stretch" Height="2" Fill="Black"/>
+
+	  <Grid Margin="0,15,0,15">
+		<Grid.ColumnDefinitions>
+		  <ColumnDefinition Width="3*"/>
+		  <ColumnDefinition Width="30"/>
+		  <ColumnDefinition Width="3*"/>
+		</Grid.ColumnDefinitions>
+
+		<StackPanel Grid.Column="0" Orientation="Vertical">
+		  <TextBlock Text="CONVOY HX-412: A CATASTROPHE IN THE NORTH ATLANTIC" FontSize="20" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,12"/>
+		  <TextBlock TextWrapping="Wrap" TextAlignment="Justify">
+			WASHINGTON — The Department of Defense confirmed late Thursday that convoy HX-412, a formation of thirty-two merchant vessels bound for Britain, was attacked and largely destroyed by Soviet naval forces in the North Atlantic. Twenty-eight ships are confirmed sunk. Survival rates among merchant crews are described as low, with water temperatures and weather conditions hampering rescue operations.
+			<LineBreak/>
+			<LineBreak/>
+			The assault, which lasted approximately four hours, was conducted by a Soviet surface strike group operating under conditions of electronic silence. Multiple ships were struck by long-range cruise missiles before NATO escort commanders were able to establish the origin of the attack. At least two Soviet submarines are believed to have participated in the operation.
+			<LineBreak/>
+			<LineBreak/>
+			Senior NATO officials, speaking anonymously, described the loss as "catastrophic" and acknowledged that the convoy's war materiel — including vehicles, ammunition, and aviation fuel destined for Allied forces — cannot be rapidly replaced. Congressional leaders are demanding an emergency session to address the vulnerability of Atlantic sea lanes. (continued p. A2)
+		  </TextBlock>
+		</StackPanel>
+
+		<StackPanel Grid.Column="2" Orientation="Vertical">
+		  <TextBlock Text="NATO COMMANDER CALLS EMERGENCY SUMMIT; REINFORCEMENTS ORDERED NORTH" FontSize="20" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,12"/>
+		  <TextBlock TextWrapping="Wrap" TextAlignment="Justify">
+			NORFOLK, VA — Supreme Allied Commander Atlantic (SACLANT) Admiral Lee Baggett Jr. convened an emergency session of NATO's Atlantic command structure Friday morning following news of the convoy massacre. Sources within the alliance confirmed that all available ASW forces — including P-3 Orion patrol aircraft, several hunter-killer submarines, and two additional destroyer squadrons — are being redeployed northward to find and destroy the Soviet surface group responsible.
+			<LineBreak/>
+			<LineBreak/>
+			The Soviet force, believed to be built around the nuclear-powered battlecruiser Kirov, has so far evaded all attempts at localisation. Signals intelligence suggests the group is maintaining strict radio silence and has been operating without predictable patterns. A senior naval analyst, speaking on condition of anonymity, called the operation "the most aggressive and competent Soviet naval action since the Second World War."
+			<LineBreak/>
+			<LineBreak/>
+			President Reagan was briefed overnight. The White House issued a statement calling the attacks "an act of war against the free world's economic lifeline" and vowing a "decisive response." The USS Enterprise carrier battle group has been ordered to depart its current station and proceed north.
+		  </TextBlock>
+		  <Rectangle HorizontalAlignment="Stretch" Height="2" Fill="Black" Margin="0,15,0,15"/>
+		  <TextBlock Text="INSURANCE MARKETS CLOSE IN LONDON AS UNDERWRITERS SUSPEND ATLANTIC COVERAGE" FontSize="17" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,10"/>
+		  <TextBlock TextWrapping="Wrap" TextAlignment="Justify">
+			LONDON — Lloyd's of London suspended all new marine insurance policies covering North Atlantic shipping routes Friday as news of the convoy disaster reached the City. The closure is the first of its kind since the Falklands conflict in 1982 and reflects the scale of uncertainty now facing commercial shipping operators. (Reuters)
+		  </TextBlock>
+		</StackPanel>
+	  </Grid>
+
+	  <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="Black"/>
+	  <TextBlock Text="— 1 —" TextAlignment="Center" Margin="0,8,0,0"/>
+
+	</StackPanel>
+  </Border>
+</Viewbox>
+</Page>

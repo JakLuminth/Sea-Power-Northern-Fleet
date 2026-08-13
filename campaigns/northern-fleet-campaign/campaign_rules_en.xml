@@ -1,0 +1,157 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}, Path=ActualWidth, FallbackValue=700}"
+  Height="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}, Path=ActualHeight, FallbackValue=600}">
+  <Grid Margin="14">
+	<Grid.RowDefinitions>
+	  <RowDefinition Height="*"/>
+	  <RowDefinition Height="12"/>
+	  <RowDefinition Height="Auto"/>
+	</Grid.RowDefinitions>
+
+	<TabControl Grid.Row="0">
+
+	  <!-- ═══════════════════════════════════════════════════════ -->
+	  <!-- TAB 1: COMMANDER RULES                                  -->
+	  <!-- ═══════════════════════════════════════════════════════ -->
+	  <TabItem Header="Commander Rules">
+		<ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+		  <StackPanel Margin="16,14,16,18">
+			<TextBlock Text="Commander Rules" FontSize="24" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,14"/>
+
+			<TextBlock Text="Northern Fleet Command" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+			<TextBlock Text="In June 1985 the Soviet Northern Fleet deployed a surface strike group into the Norwegian Sea and North Atlantic. You command that force — a task force of Soviet Navy surface combatants, submarines, and aviation assets operating far from home ports against NATO naval power." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+			<TextBlock Text="Your commander is Soviet. Commander nationality does not change mission rules, ship performance, aircraft performance, or combat capability." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+			<Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+			<TextBlock Text="National Purchase Discount" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+			<TextBlock FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5">
+			  <Run Text="- Commanders receive a "/><Run Text="{Binding SameNationDiscountPercentText}"/><Run Text="% point discount when purchasing units from their own nation."/>
+			</TextBlock>
+			<TextBlock Text="- All available units in this campaign are Soviet, so the discount applies across the entire roster." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+			<Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+			<TextBlock Text="Awards and Promotions" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+			<TextBlock Text="- Your commander's campaign progress is tracked in the Service Record." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- The Service Record includes promotions, medals, total kills, losses, survivors rescued, and score." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- Completing key missions earns rank promotions. Reach the final mission to achieve the highest distinction." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- Select an award or ribbon to read its full citation." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap"/>
+		  </StackPanel>
+		</ScrollViewer>
+	  </TabItem>
+
+	  <!-- ═══════════════════════════════════════════════════════ -->
+	  <!-- TAB 2: TASK FORCE                                       -->
+	  <!-- ═══════════════════════════════════════════════════════ -->
+	  <TabItem Header="Task Force">
+		<ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+		  <StackPanel Margin="16,14,16,18">
+			<TextBlock Text="Task Force Rules" FontSize="24" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,14"/>
+
+			<TextBlock Text="Building Your Task Force" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+			<TextBlock Text="- Before each mission, use the Task Force Builder to purchase ships, submarines, aircraft, and helicopters within your available point budget." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- At least one surface ship must be in your task force before you can deploy." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- Submarines operate in separate optional side missions. They do not appear alongside your surface task force." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+			<Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+			<TextBlock Text="Points and Costs" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+			<TextBlock Text="- Each unit in your roster has a point cost. Your available points are shared across all units in the task force." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- Mission completion earns campaign points. Points accumulate up to the cap across the campaign." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- Repairing damaged ships costs points. Manage your budget carefully — a depleted treasury limits what you can deploy on the next mission." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+			<Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+			<TextBlock Text="Crew Experience" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+			<TextBlock Text="- Crew experience improves as ships survive missions and accumulate engagement time." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- More experienced crews react faster, aim more accurately, and are harder to suppress in combat." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- Losing veteran ships is a serious setback. Protect high-experience units where possible." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+			<Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+			<TextBlock Text="Air Tasking" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+			<TextBlock Text="- Aircraft squadrons assigned to land bases can be pre-tasked before a mission launches. Open Prepare Airbase from the selected mission and use the Air Tasking tab to assign eligible unassigned aircraft before launch." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- Each Air Tasking row represents one mission flight. Larger flights must use the same aircraft type, but may launch partially filled if too few aircraft are available." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- Submarines operate independently of your task force. They appear in separate optional side missions, which offer benefits to complete, but do not advance the main campaign." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+			<Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+			<TextBlock Text="Flagships" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+			<TextBlock Text="- A surface ship is required before the task force can deploy." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- The first ship in your task force is the flagship by default. You can assign any ship as flagship from Task Force Manager." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- The flagship must survive each mission. Other units in the task force may be lost, but if the flagship is destroyed, the mission fails." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+			<Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+			<TextBlock Text="Search and Rescue" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+			<TextBlock Text="- Life rafts may appear when ships are sunk or aircraft are shot down. Move a helicopter or ship close to the rafts to recover survivors." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14">
+			  <Run Text="- Every "/><Run Text="{Binding CSARPointModifierText}"/><Run Text=" survivors rescued in a mission awards 1 campaign point at mission end. Partial groups do not award additional points."/>
+			</TextBlock>
+			<Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+			<TextBlock Text="Mission Outcomes" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+			<TextBlock Text="- Losing a mission does not damage your task force or apply additional penalties." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- A failed mission must be replayed and completed successfully to advance." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- Completed missions can be replayed with the original task force built for that mission." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- After completing the campaign, all missions unlock for use with any task force you configure." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap"/>
+		  </StackPanel>
+		</ScrollViewer>
+	  </TabItem>
+
+	  <!-- ═══════════════════════════════════════════════════════ -->
+	  <!-- TAB 3: UNIT CATALOG                                     -->
+	  <!-- ═══════════════════════════════════════════════════════ -->
+	  <TabItem Header="Unit Catalog">
+		<Grid Margin="16,14,16,18">
+		  <Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="6"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="12"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="6"/>
+			<RowDefinition Height="*"/>
+		  </Grid.RowDefinitions>
+
+		  <TextBlock Text="Unit Prices" FontSize="24" FontWeight="Bold" Foreground="White" TextWrapping="Wrap"/>
+		  <TextBlock Grid.Row="2" Text="Review available unit classes and point costs. Select a class name to open its unit reference. Use the Task Force Builder to add units to your task force." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap"/>
+
+		  <Grid Grid.Row="4" Margin="0,0,16,0">
+			<Grid.ColumnDefinitions>
+			  <ColumnDefinition Width="210"/>
+			  <ColumnDefinition Width="*"/>
+			  <ColumnDefinition Width="150"/>
+			</Grid.ColumnDefinitions>
+			<TextBlock Text="Unit Class" FontSize="13" FontWeight="Bold" Foreground="White"/>
+			<TextBlock Grid.Column="1" Text="Description" FontSize="13" FontWeight="Bold" Foreground="White"/>
+			<TextBlock Grid.Column="2" Text="Point Cost" FontSize="13" FontWeight="Bold" Foreground="White" TextAlignment="Right"/>
+		  </Grid>
+
+		  <ScrollViewer Grid.Row="6" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+			<ItemsControl ItemsSource="{Binding RosterItems}">
+			  <ItemsControl.ItemTemplate>
+				<DataTemplate>
+				  <Grid Margin="0,0,16,4">
+					<Grid.ColumnDefinitions>
+					  <ColumnDefinition Width="210"/>
+					  <ColumnDefinition Width="*"/>
+					  <ColumnDefinition Width="150"/>
+					</Grid.ColumnDefinitions>
+					<TextBlock Text="{Binding DisplayName}" FontSize="14" Foreground="#D8DDE8" TextWrapping="Wrap" VerticalAlignment="Top"/>
+					<TextBlock Grid.Column="1" Text="{Binding Description}" FontSize="14" Foreground="#D8DDE8" TextWrapping="Wrap" VerticalAlignment="Top" Margin="8,0,0,0"/>
+					<TextBlock Grid.Column="2" Text="{Binding PointCost}" FontSize="14" Foreground="#D8DDE8" TextAlignment="Right" VerticalAlignment="Top"/>
+				  </Grid>
+				</DataTemplate>
+			  </ItemsControl.ItemTemplate>
+			</ItemsControl>
+		  </ScrollViewer>
+		</Grid>
+	  </TabItem>
+
+	</TabControl>
+
+	<Button Grid.Row="2"
+			HorizontalAlignment="Right"
+			Width="110"
+			Height="32"
+			Content="{Binding Path=LanguageDictionary[genericskip], Source={StaticResource LanguageResourceInterface}, FallbackValue='Skip'}"
+			Command="{Binding CloseWindowCommand}"/>
+  </Grid>
+</Page>

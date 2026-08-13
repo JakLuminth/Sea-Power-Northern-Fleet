@@ -1,0 +1,78 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+
+<Viewbox>
+  <Border Background="White" Width="1000" Padding="30" TextElement.Foreground="Black" TextElement.FontSize="16">
+	<Border.Effect>
+	  <DropShadowEffect />
+	</Border.Effect>
+	<StackPanel Orientation="Vertical">
+
+	  <!-- Masthead -->
+	  <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="Black"/>
+	  <TextBlock Text="1 июня 1985 г. | Суббота | Цена: 3 копейки" Margin="0,10,0,10" FontSize="18" TextAlignment="Center"/>
+	  <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="Black"/>
+	  <Grid Margin="0,5,0,10">
+		<Rectangle Fill="Red" Margin="0,95,0,4"/>
+		<TextBlock Text="Красная Звезда" TextAlignment="Center" FontSize="96" FontWeight="Bold" Foreground="White"/>
+	  </Grid>
+	  <TextBlock Text="ОФИЦИАЛЬНОЕ ИЗДАНИЕ МИНИСТЕРСТВА ОБОРОНЫ СССР  ·  RED STAR  ·  OFFICIAL ORGAN OF THE USSR MINISTRY OF DEFENCE" TextAlignment="Center" FontSize="13" Margin="0,0,0,8"/>
+	  <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="Black"/>
+
+	  <!-- Lead headline -->
+	  <TextBlock Text="NATO MANOEUVRES IN NORWEGIAN SEA REACH UNPRECEDENTED SCALE" FontWeight="Bold" FontSize="30" TextWrapping="Wrap" TextAlignment="Center" Margin="0,15,0,15"/>
+	  <Rectangle HorizontalAlignment="Stretch" Height="2" Fill="Black"/>
+
+	  <!-- Two-column body -->
+	  <Grid Margin="0,15,0,15">
+		<Grid.ColumnDefinitions>
+		  <ColumnDefinition Width="3*"/>
+		  <ColumnDefinition Width="30"/>
+		  <ColumnDefinition Width="3*"/>
+		</Grid.ColumnDefinitions>
+
+		<StackPanel Grid.Column="0" Orientation="Vertical">
+		  <TextBlock Text="ALLIANCE EXERCISES MASK PREPARATIONS FOR AGGRESSION — TASS" FontSize="20" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,12"/>
+		  <TextBlock TextWrapping="Wrap" TextAlignment="Justify">
+			MOSCOW — NATO has this week deployed the largest naval force seen in the Norwegian Sea since the end of the Second World War, according to TASS correspondents monitoring exercises designated OCEAN VENTURE. The force includes three aircraft carrier battle groups, numerous surface combatants, and an unspecified number of submarines.
+			<LineBreak/>
+			<LineBreak/>
+			Soviet spokesmen characterised the manoeuvres as deliberately provocative and incompatible with the stated goal of reducing tensions in Europe. Foreign Ministry spokesman V.P. Lomeiko stated that the Soviet Union "reserves the right to take all necessary measures" to ensure the security of its northern approaches.
+			<LineBreak/>
+			<LineBreak/>
+			Red Banner Northern Fleet units have been placed on elevated readiness. Observers in Murmansk report increased activity at Severomorsk naval base, with a number of large surface combatants and submarines departing for undisclosed exercises. (continued p. 2)
+		  </TextBlock>
+		</StackPanel>
+
+		<StackPanel Grid.Column="2" Orientation="Vertical">
+		  <TextBlock Text="WARSAW PACT CONVENES EMERGENCY SESSION IN MOSCOW" FontSize="20" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,12"/>
+		  <TextBlock TextWrapping="Wrap" TextAlignment="Justify">
+			MOSCOW — Senior defence ministers of Warsaw Pact member states convened in Moscow on Friday at the request of the Soviet leadership to review the current military situation in Europe, TASS reported. The session, described as routine by official spokesmen, was called with less than 48 hours' notice — an unusual departure from standard procedure.
+			<LineBreak/>
+			<LineBreak/>
+			Western intelligence agencies have assessed that the meeting concerns contingency planning related to NATO's accelerated exercise schedule, which includes simulated amphibious landings on the Norwegian coast and anti-submarine sweeps across the GIUK Gap.
+			<LineBreak/>
+			<LineBreak/>
+			In Washington, the State Department said it was "monitoring developments" and called for restraint on both sides. The Pentagon declined to comment on specific operational details of ongoing exercises. (AP / Reuters)
+		  </TextBlock>
+		  <Rectangle HorizontalAlignment="Stretch" Height="2" Fill="Black" Margin="0,15,0,15"/>
+		  <TextBlock Text="SOVIET ECONOMY: FIVE-YEAR PLAN TARGETS MET IN KEY SECTORS" FontSize="18" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,10"/>
+		  <TextBlock TextWrapping="Wrap" TextAlignment="Justify">
+			MOSCOW — Gosplan announced that production quotas in steel, coal, and machine-tool manufacture have been met or exceeded for the first quarter of 1985. Defence-industrial output was not separately disclosed. Premier Ryzhkov praised the efforts of Soviet workers in maintaining output levels during a period of international uncertainty. (TASS)
+		  </TextBlock>
+		</StackPanel>
+	  </Grid>
+
+	  <Rectangle HorizontalAlignment="Stretch" Height="5" Fill="Black"/>
+	  <TextBlock Text="— 1 —" TextAlignment="Center" Margin="0,8,0,0"/>
+
+	</StackPanel>
+  </Border>
+</Viewbox>
+</Page>

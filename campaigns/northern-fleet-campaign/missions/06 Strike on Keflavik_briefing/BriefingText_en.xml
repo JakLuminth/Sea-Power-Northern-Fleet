@@ -1,0 +1,59 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="GHQ RED BANNER NORTHERN FLEET" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDER, {TaskForceName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="NORTHERN FLEET AIR OPERATIONS" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="SUPPRESSION OF KEFLAVIK" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="24 JUN 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	Keflavik air base sustains NATO air operations over the North Atlantic. Its radar and logistics facilities provide the surveillance and support required to hunt {TaskForceName}. A Tu-22M Backfire regiment has been staged to suppress the base.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Protect the Tu-22M strike package and ensure Keflavik radar destruction.
+	<LineBreak />2.2 {FlagshipName} must survive.
+	<LineBreak />2.3 At least one Tu-22M must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Maintain an air defense screen between the strike package and NATO surface or air threats.
+	<LineBreak />3.2 Suppress surface-to-air threats that can interfere with the bomber approach corridor.
+	<LineBreak />3.3 Keep {TaskForceName} positioned to support the strike without entering unnecessary land-based defenses.
+	<LineBreak />3.4 Confirm Keflavik radar destruction before breaking contact.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 Keflavik air base is defended by radar, logistics facilities, and supporting air defense systems.
+	<LineBreak />4.2 NATO air patrols and missile-armed surface units may respond to the strike.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 A Tu-22M Backfire regiment is assigned to the attack.
+	<LineBreak />5.2 {TaskForceName} provides escort, air defense, and missile suppression.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 Keflavik is a critical node in NATO's North Atlantic surveillance network.
+	<LineBreak />6.2 The strike package will be exposed during approach and withdrawal. Protect the bombers and preserve at least one aircraft for the return flight.
+  </TextBlock>
+</Grid>

@@ -1,0 +1,59 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="GHQ RED BANNER NORTHERN FLEET" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDER, {TaskForceName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="NORTHERN FLEET INTELLIGENCE" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CONVOY HX-412" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="14 JUN 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	NATO convoy HX-412 has been located in the North Atlantic. Eight merchant ships carrying war materiel to Britain are proceeding under the protection of surface escorts and attack submarines. If the convoy reaches port, it will reinforce NATO operations for months.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Locate and destroy the NATO convoy.
+	<LineBreak />2.2 {FlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Use the submarine wolf pack to locate the convoy and draw out the escorts.
+	<LineBreak />3.2 Close with the convoy when the tactical picture permits and concentrate fires on the merchant ships.
+	<LineBreak />3.3 Coordinate surface and subsurface attacks. Do not allow surviving escorts to regroup around the merchants.
+	<LineBreak />3.4 Confirm destruction of the convoy before withdrawing from the area.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 Eight NATO merchant ships, including freighters, bulk carriers, and vehicle carriers.
+	<LineBreak />4.2 Eight surface escorts are assessed in company with the convoy.
+	<LineBreak />4.3 Two NATO attack submarines may be operating near the formation.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceName} and its assigned submarine wolf pack are committed to the attack.
+	<LineBreak />5.2 Long-range missiles and coordinated torpedo attacks are available for the engagement.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 The convoy is expected to maintain course for Britain and rely on its escorts to absorb the initial attack.
+	<LineBreak />6.2 Merchant destruction is the primary objective. Do not become fixed by the escorts or expose the flagship unnecessarily.
+  </TextBlock>
+</Grid>

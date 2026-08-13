@@ -1,0 +1,88 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+
+<Viewbox>
+  <Border Background="White" Width="1000" Padding="30" TextElement.Foreground="Black" TextElement.FontSize="16">
+	<Border.Effect>
+	  <DropShadowEffect />
+	</Border.Effect>
+	<StackPanel Orientation="Vertical">
+
+	  <Rectangle HorizontalAlignment="Stretch" Height="8" Fill="Red"/>
+	  <TextBlock Text="★  СПЕЦИАЛЬНЫЙ ВЫПУСК  ★  SPECIAL VICTORY EDITION  ★" Margin="0,10,0,10" FontSize="20" TextAlignment="Center" FontWeight="Bold" Foreground="Red"/>
+	  <Rectangle HorizontalAlignment="Stretch" Height="8" Fill="Red"/>
+	  <Grid Margin="0,5,0,10">
+		<Rectangle Fill="Red" Margin="0,95,0,4"/>
+		<TextBlock Text="Красная Звезда" TextAlignment="Center" FontSize="96" FontWeight="Bold" Foreground="White"/>
+	  </Grid>
+	  <TextBlock Text="2 июля 1985 г.  ·  ОФИЦИАЛЬНОЕ ИЗДАНИЕ МИНИСТЕРСТВА ОБОРОНЫ СССР" TextAlignment="Center" FontSize="13" Margin="0,0,0,8"/>
+	  <Rectangle HorizontalAlignment="Stretch" Height="8" Fill="Red"/>
+
+	  <!-- Victory headline -->
+	  <TextBlock Text="ВЕЛИКАЯ ПОБЕДА В НОРВЕЖСКОМ МОРЕ" FontWeight="Bold" FontSize="40" TextWrapping="Wrap" TextAlignment="Center" Margin="0,15,0,6" Foreground="Red"/>
+	  <TextBlock Text="NORWEGIAN SEA SECURED — NATO ATLANTIC STRATEGY IN COLLAPSE" FontWeight="Bold" FontSize="26" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,15"/>
+	  <Rectangle HorizontalAlignment="Stretch" Height="3" Fill="Black"/>
+
+	  <Grid Margin="0,15,0,15">
+		<Grid.ColumnDefinitions>
+		  <ColumnDefinition Width="3*"/>
+		  <ColumnDefinition Width="30"/>
+		  <ColumnDefinition Width="3*"/>
+		</Grid.ColumnDefinitions>
+
+		<StackPanel Grid.Column="0" Orientation="Vertical">
+		  <TextBlock Text="СОВЕТСКИЙ СЕВЕРНЫЙ ФЛОТ РАЗГРОМИЛ СИЛЫ НАТО В НОРВЕЖСКОМ МОРЕ" FontSize="19" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,12"/>
+		  <TextBlock TextWrapping="Wrap" TextAlignment="Justify">
+			МОСКВА — Главнокомандующий Военно-Морским Флотом СССР адмирал флота С.Г. Горшков сегодня объявил о выдающейся победе советского Северного флота в Норвежском море. Ударная группа «Киров», действовавшая в условиях жёсткого противодействия сил НАТО, успешно выполнила все поставленные боевые задачи.
+			<LineBreak/>
+			<LineBreak/>
+			В ходе операции, продолжавшейся почти месяц, советские корабли нанесли противнику потери, несовместимые с сохранением им наступательного потенциала в Атлантике. Авианосец ВМС США «Энтерпрайз» выведен из строя и отозван из района боевых действий. Атлантические конвои НАТО понесли тяжёлые потери.
+			<LineBreak/>
+			<LineBreak/>
+			Советский флот показал всему миру, что Мировой океан не является исключительной вотчиной западных держав. Норвежское море отныне — советское море. (ТАСС)
+		  </TextBlock>
+
+		  <Rectangle HorizontalAlignment="Stretch" Height="2" Fill="Black" Margin="0,15,0,15"/>
+
+		  <TextBlock Text="ГОРШКОВ: «БАЛТИКА И НОРВЕЖСКОЕ МОРЕ — ПОД НАДЁЖНОЙ ЗАЩИТОЙ»" FontSize="19" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,12"/>
+		  <TextBlock TextWrapping="Wrap" TextAlignment="Justify">
+			На торжественном приёме в Кремле адмирал Горшков заявил, что советские военно-морские силы впредь будут обеспечивать безопасность северных морских рубежей страны с ещё большей решимостью. «Враг теперь знает цену попытки бросить вызов Советскому флоту в его собственных водах», — сказал он. По имеющимся сведениям, Генеральный секретарь ЦК КПСС лично поздравил офицеров и экипажи кораблей ударной группы.
+		  </TextBlock>
+		</StackPanel>
+
+		<StackPanel Grid.Column="2" Orientation="Vertical">
+		  <TextBlock FontSize="19" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,12"><Run Text="HERO OF THE SOVIET UNION — "/><Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName]}"/></TextBlock>
+		  <TextBlock TextWrapping="Wrap" TextAlignment="Justify">
+			By decree of the Presidium of the Supreme Soviet, the officers and men of <Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName]}"/> are awarded the Order of the Red Banner for distinguished service in combat against enemy forces of the NATO alliance. The task force endured sustained adversity, operating far from home ports with limited resupply, and consistently achieved its operational objectives against a numerically superior opponent.
+			<LineBreak/>
+			<LineBreak/>
+			The commanding officer of <Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName]}"/>
+			is awarded the Order of Nakhimov, First Class, in recognition of outstanding tactical leadership, exceptional personal courage, and the decisive contribution of his command to Soviet naval supremacy in the Norwegian Sea theatre. By separate decree, this officer is advanced in rank to the grade of Kontr-Admiral.
+			<LineBreak/>
+			<LineBreak/>
+			The order of the day reads: <Run FontStyle="Italic">"The Navy of the Soviet Union stands tall. The sacrifice and skill of every sailor aboard <Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName]}"/> has secured not only the Norwegian Sea, but the future of our nation's northern frontier. History will record this campaign as proof of the fighting spirit of the Soviet Navy."</Run>
+		  </TextBlock>
+
+		  <Rectangle HorizontalAlignment="Stretch" Height="2" Fill="Black" Margin="0,15,0,15"/>
+
+		  <TextBlock Text="NATO COMMAND ACKNOWLEDGES 'SEVERE DEGRADATION' OF ATLANTIC CAPABILITY" FontSize="17" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,10"/>
+		  <TextBlock TextWrapping="Wrap" TextAlignment="Justify">
+			LONDON — NATO's Supreme Allied Commander Europe issued a terse statement Friday acknowledging that Alliance naval forces in the Atlantic have suffered "severe and unexpected degradation" as a result of Soviet operations. No timeline was given for restoration of convoy route security. Allied governments are convening in emergency session. (Reuters)
+		  </TextBlock>
+		</StackPanel>
+	  </Grid>
+
+	  <Rectangle HorizontalAlignment="Stretch" Height="8" Fill="Red"/>
+	  <TextBlock Text="★  СЛАВА СОВЕТСКОМУ ВОЕННО-МОРСКОМУ ФЛОТУ!  ★  GLORY TO THE SOVIET NAVY!  ★" TextAlignment="Center" FontWeight="Bold" FontSize="18" Foreground="White" Background="Red" Padding="0,8,0,8"/>
+	  <Rectangle HorizontalAlignment="Stretch" Height="8" Fill="Red"/>
+
+	</StackPanel>
+  </Border>
+</Viewbox>
+</Page>

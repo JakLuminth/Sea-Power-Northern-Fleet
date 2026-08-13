@@ -1,0 +1,61 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="GHQ RED BANNER NORTHERN FLEET" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDER, {TaskForceName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="NORTHERN FLEET STRIKE COMMAND" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="BATTLE OF THE NORWEGIAN SEA" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="28 JUN 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	USS Nimitz has been badly damaged and Keflavik has been suppressed. NATO has committed its second carrier battle group, centered on USS Enterprise, to hunt down {TaskForceName}. This engagement will determine whether NATO can retain carrier capability in the North Atlantic.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Strike and destroy the USS Enterprise.
+	<LineBreak />2.2 Break the carrier group's ability to conduct sustained operations in the Atlantic.
+	<LineBreak />2.3 {FlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Use submarines to approach the carrier group and identify the carrier's position.
+	<LineBreak />3.2 Employ the task force's long-range missiles against Enterprise before the escorts can close.
+	<LineBreak />3.3 Concentrate fires on the carrier first, then disengage or destroy the remaining escorts as the tactical situation permits.
+	<LineBreak />3.4 Preserve the flagship and surviving combat units for the final operation.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 USS Enterprise, CVN-65.
+	<LineBreak />4.2 USS Thomas S. Gates, CG-51.
+	<LineBreak />4.3 USS Bunker Hill, CG-52.
+	<LineBreak />4.4 Additional carrier aircraft and escorts are expected.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceName} is the principal Soviet strike force in the area.
+	<LineBreak />5.2 Assigned submarines are to lead the contact and provide the first attack opportunity.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 NATO is committed to restoring the initiative after the loss of Nimitz and the suppression of Keflavik.
+	<LineBreak />6.2 Destruction of Enterprise will remove NATO's remaining Atlantic carrier capability. Treat this as the decisive engagement of the campaign.
+  </TextBlock>
+</Grid>

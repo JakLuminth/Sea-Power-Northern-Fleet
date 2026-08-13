@@ -1,0 +1,58 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="GHQ RED BANNER NORTHERN FLEET" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDER, {TaskForceName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="NORTHERN FLEET OPERATIONS" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATION NORTHERN BREAKTHROUGH" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="05 JUN 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	{TaskForceName} is departing Severomorsk as the Northern Fleet enters wartime operations. NATO hunter-killer submarines and maritime patrol aircraft are already searching the Barents Sea. The enemy intends to contain the task force before it reaches open water.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Bring the task force through the patrol zone.
+	<LineBreak />2.2 {FlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Advance through the marked patrol area at best practical speed.
+	<LineBreak />3.2 Use helicopters, sonar, and available reconnaissance to clear the route ahead.
+	<LineBreak />3.3 Employ the task force's long-range weapons against threats that attempt to surface or close the formation.
+	<LineBreak />3.4 Maintain formation integrity until the Norwegian Sea exit is secured.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 NATO submarines are operating inside the Barents Sea cordon.
+	<LineBreak />4.2 Maritime patrol aircraft are expected to support the submarine screen.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceName} is the principal Soviet surface strike group in the operation.
+	<LineBreak />5.2 Organic helicopters and sensors are available for anti-submarine screening.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 NATO is aware that the Northern Fleet has sortied and will attempt to delay or destroy the task force before breakout.
+	<LineBreak />6.2 Expect the heaviest resistance near the marked breakthrough area. Preserve the flagship and maintain momentum.
+  </TextBlock>
+</Grid>

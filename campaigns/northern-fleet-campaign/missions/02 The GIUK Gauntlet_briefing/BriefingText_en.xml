@@ -1,0 +1,59 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="GHQ RED BANNER NORTHERN FLEET" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDER, {TaskForceName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="NORTHERN FLEET OPERATIONS" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATION GIUK GAUNTLET" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="09 JUN 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	The Greenland-Iceland-United Kingdom Gap is NATO's most fortified anti-submarine chokepoint. SOSUS arrays, P-3 Orion patrol aircraft, and British surface units are positioned to prevent {TaskForceName} from reaching the North Atlantic.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Bring the task force through the GIUK patrol zone.
+	<LineBreak />2.2 {FlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Send submarines ahead to investigate contacts and disrupt NATO surveillance.
+	<LineBreak />3.2 Keep the surface group outside unnecessary engagement ranges while crossing the gap.
+	<LineBreak />3.3 Use air defenses to deny P-3 Orion attacks and preserve the task force's freedom of maneuver.
+	<LineBreak />3.4 Continue west until the marked patrol zone has been cleared.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 NATO SOSUS arrays are expected to provide early warning throughout the passage.
+	<LineBreak />4.2 British frigates and American submarines are pre-positioned near the gap.
+	<LineBreak />4.3 Maritime patrol aircraft will reinforce the surface and subsurface screen.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceName} is supported by its assigned submarines and organic air defense systems.
+	<LineBreak />5.2 The task force must preserve enough combat power for operations in the North Atlantic.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 NATO will treat this transit as the decisive opportunity to contain the Northern Fleet.
+	<LineBreak />6.2 Expect persistent contact reports and coordinated attacks near the center of the gap. Do not allow the formation to lose momentum.
+  </TextBlock>
+</Grid>

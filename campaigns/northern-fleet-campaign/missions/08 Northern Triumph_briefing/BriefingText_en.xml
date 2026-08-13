@@ -1,0 +1,59 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="GHQ RED BANNER NORTHERN FLEET" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDER, {TaskForceName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="NORTHERN FLEET OPERATIONS" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATION NORTHERN TRIUMPH" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="02 JUL 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	NATO's carrier forces have been crippled and Keflavik has been suppressed. A reinforcement convoy of five Soviet ships must cross the Norwegian Sea and pass through the GIUK Gap. NATO is committing its remaining surface and submarine forces to prevent the convoy from reaching its destination.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Escort the reinforcement convoy through the GIUK Gap.
+	<LineBreak />2.2 Defeat or drive off any NATO force that attempts to block the convoy.
+	<LineBreak />2.3 {FlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Keep the reinforcement ships inside the protected formation and maintain a forward search screen.
+	<LineBreak />3.2 Use submarines and long-range weapons to disrupt NATO forces before they reach the convoy.
+	<LineBreak />3.3 Engage threats that enter the convoy corridor and prevent losses among the reinforcement ships.
+	<LineBreak />3.4 Continue through the marked GIUK exit corridor until the convoy is clear.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 NATO surface combatants and submarines are converging on the convoy route.
+	<LineBreak />4.2 Remaining maritime patrol and strike aircraft may support the final attempt to close the gap.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceName} is assigned as the convoy escort and principal combat force.
+	<LineBreak />5.2 Five Soviet reinforcement ships are the protected force.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 NATO understands that the convoy's safe passage will establish Soviet control of the North Atlantic approaches.
+	<LineBreak />6.2 The final transit will be contested at close range. Protect the convoy first and accept no unnecessary separation from the escorted ships.
+  </TextBlock>
+</Grid>

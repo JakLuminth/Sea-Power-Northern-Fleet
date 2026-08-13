@@ -1,0 +1,88 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+
+<Border Background="#2b2d31" HorizontalAlignment="Center" VerticalAlignment="Center" Width="950" TextElement.Foreground="#c9cdd3" TextElement.FontSize="15" Padding="30">
+  <StackPanel Orientation="Vertical">
+
+	<!-- Header bar -->
+	<Border Background="#1a1c1f" Padding="15" Margin="0,0,0,20">
+	  <StackPanel Orientation="Vertical">
+		<TextBlock Text="СОВЕРШЕННО СЕКРЕТНО · ОСОБОЙ ВАЖНОСТИ" FontSize="13" Foreground="#cc3333" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,6"/>
+		<TextBlock Text="ГЛАВНЫЙ ШТАБ ВОЕННО-МОРСКОГО ФЛОТА СССР" FontSize="18" Foreground="White" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,4"/>
+		<TextBlock Text="БОЕВАЯ ДИРЕКТИВА №  СФ-85-0614" FontSize="15" Foreground="#aaaaaa" TextAlignment="Center"/>
+		<TextBlock Text="5 июня 1985 г." FontSize="14" Foreground="#aaaaaa" TextAlignment="Center" Margin="0,4,0,0"/>
+	  </StackPanel>
+	</Border>
+
+	<!-- Address fields -->
+	<Grid Margin="0,0,0,20">
+	  <Grid.RowDefinitions>
+		<RowDefinition Height="Auto"/>
+		<RowDefinition Height="Auto"/>
+		<RowDefinition Height="Auto"/>
+		<RowDefinition Height="Auto"/>
+	  </Grid.RowDefinitions>
+	  <Grid.ColumnDefinitions>
+		<ColumnDefinition Width="Auto"/>
+		<ColumnDefinition Width="15"/>
+		<ColumnDefinition Width="*"/>
+	  </Grid.ColumnDefinitions>
+
+	  <TextBlock Grid.Row="0" Grid.Column="0" FontWeight="Bold" Foreground="White" Text="FROM:"/>
+	  <TextBlock Grid.Row="0" Grid.Column="2" Text="Admiral of the Fleet S.G. Gorshkov, Commander-in-Chief of the Soviet Navy (GK VMF)"/>
+
+	  <TextBlock Grid.Row="1" Grid.Column="0" FontWeight="Bold" Foreground="White" Text="TO:" Margin="0,8,0,0"/>
+	  <TextBlock Grid.Row="1" Grid.Column="2" Margin="0,8,0,0">
+		<Run Text="Commanding Officer, "/><Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName]}" Foreground="White" FontWeight="Bold"/>
+	  </TextBlock>
+
+	  <TextBlock Grid.Row="2" Grid.Column="0" FontWeight="Bold" Foreground="White" Text="COPY:" Margin="0,8,0,0"/>
+	  <TextBlock Grid.Row="2" Grid.Column="2" Margin="0,8,0,0" Text="Commander, Red Banner Northern Fleet; Chief of the Naval General Staff"/>
+
+	  <TextBlock Grid.Row="3" Grid.Column="0" FontWeight="Bold" Foreground="White" Text="SUBJECT:" Margin="0,8,0,0"/>
+	  <TextBlock Grid.Row="3" Grid.Column="2" Margin="0,8,0,0" Text="Combat Employment of Northern Fleet Surface Strike Group — IMMEDIATE ACTION"/>
+	</Grid>
+
+	<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="#444" Margin="0,0,0,20"/>
+
+	<!-- Body -->
+	<TextBlock TextWrapping="Wrap" LineHeight="24">
+	  1. In accordance with Directive of the Supreme High Command dated 5 June 1985 and the deteriorating situation in the Euro-Atlantic theatre, Red Banner Northern Fleet is ordered to transition to combat operations with immediate effect.
+	  <LineBreak/><LineBreak/>
+	  2. <Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName]}"/>, built around the task force flagship, is hereby constituted as an independent raiding and strike group. The task force is assigned the following primary missions:
+	  <LineBreak/><LineBreak/>
+	  <Run Foreground="White" FontWeight="Bold">      а.</Run>  Denial of the Greenland-Iceland-UK Gap to NATO reinforcement shipping and ASW forces.
+	  <LineBreak/>
+	  <Run Foreground="White" FontWeight="Bold">      б.</Run>  Interdiction and destruction of NATO supply convoys operating in the North Atlantic.
+	  <LineBreak/>
+	  <Run Foreground="White" FontWeight="Bold">      в.</Run>  Suppression of NATO air and naval power in the Norwegian Sea operational zone.
+	  <LineBreak/><LineBreak/>
+	  3. <Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName]}"/> will depart Severomorsk no later than 0600 local time, 5 June 1985. Strict radio silence is to be maintained during the initial transit phase. Submarine screening elements are to precede the surface group by no less than thirty nautical miles.
+	  <LineBreak/><LineBreak/>
+	  4. Commanding Officer is authorised to engage any NATO or hostile force encountered in the assigned operational area without further reference to this command. Rules of engagement: WEAPONS FREE against all identified hostile military targets.
+	  <LineBreak/><LineBreak/>
+	  5. Resupply and repair facilities will be arranged at designated points along the operational timeline. Further instructions will follow by encrypted burst transmission.
+	  <LineBreak/><LineBreak/>
+	  6. The Motherland places full confidence in you, Komanduyushchiy. The eyes of the Fleet are upon <Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName]}"/>. Accomplish your mission.
+	</TextBlock>
+
+	<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="#444" Margin="0,20,0,15"/>
+
+	<!-- Signature -->
+	<TextBlock TextWrapping="Wrap" Foreground="#aaaaaa" FontSize="14">
+	  END OF DIRECTIVE
+	  <LineBreak/>
+	  /s/ GORSHKOV · Admiral Flota Sovetskogo Soyuza
+	  <LineBreak/><LineBreak/>
+	  <Run Foreground="#cc3333">СОВЕРШЕННО СЕКРЕТНО — После прочтения уничтожить</Run>
+	</TextBlock>
+
+  </StackPanel>
+</Border>
+</Page>

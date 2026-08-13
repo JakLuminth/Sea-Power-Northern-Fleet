@@ -1,0 +1,59 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="GHQ RED BANNER NORTHERN FLEET" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDER, {TaskForceName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="NORTHERN FLEET INTELLIGENCE" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="NORDKAPP RELAY STATION" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="22 JUN 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	A NATO SOSUS hydrophone relay and radar installation at Nordkapp is tracking Soviet submarine activity throughout the Norwegian Sea. The installation is feeding contact data to the NATO patrol network and must be removed before the Northern Fleet continues its operations.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Destroy the Nordkapp SOSUS relay and radar installation.
+	<LineBreak />2.2 {FlagshipName} must survive.
+	<LineBreak />2.3 The Oscar strike submarine must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Position the Oscar strike submarine outside the effective range of Norwegian coastal defenses.
+	<LineBreak />3.2 Launch the submarine-launched cruise missile strike against the relay and radar targets.
+	<LineBreak />3.3 Keep {TaskForceName} ready to defeat Norwegian patrol boats or coastal defense units that respond.
+	<LineBreak />3.4 Withdraw the strike submarine after weapons release and confirm target destruction.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 Nordkapp relay and radar facilities are fixed land targets.
+	<LineBreak />4.2 Norwegian patrol boats and coastal defense forces will respond after the attack.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 K-525 Arkhangelsk is assigned as the strike submarine.
+	<LineBreak />5.2 {TaskForceName} provides the air defense umbrella and suppresses responding surface threats.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 The relay station is a critical link in NATO's anti-submarine surveillance network.
+	<LineBreak />6.2 The strike must be conducted before the installation can pass additional data on Soviet movements. Protect Arkhangelsk until the target system is eliminated.
+  </TextBlock>
+</Grid>

@@ -1,0 +1,124 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+
+<Viewbox>
+  <Border Background="White" Width="864" Height="1120" Padding="45"
+		  TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16">
+	<Border.Effect>
+	  <DropShadowEffect />
+	</Border.Effect>
+
+	<Border BorderThickness="0,10,10,10" BorderBrush="Black">
+	  <Grid>
+		<Grid.RowDefinitions>
+		  <RowDefinition Height="Auto"/>
+		  <RowDefinition Height="10"/>
+		  <RowDefinition Height="*"/>
+		  <RowDefinition Height="Auto"/>
+		  <RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+
+		<!-- Header block -->
+		<Grid Grid.Row="0">
+		  <Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="10"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="15"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="15"/>
+			<RowDefinition Height="Auto"/>
+		  </Grid.RowDefinitions>
+		  <Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="Auto"/>
+		  </Grid.ColumnDefinitions>
+
+		  <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="TOP SECRET / ATOMAL" TextAlignment="Center" FontWeight="Bold"/>
+		  <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" TextAlignment="Center" FontFamily="Times New Roman">
+			Supreme Allied Commander Atlantic
+			<LineBreak/>
+			<Run FontSize="12">Norfolk, Virginia  22551</Run>
+		  </TextBlock>
+
+		  <TextBlock Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Text="INTELLIGENCE ASSESSMENT — NORTHERN FLEET SURFACE STRIKE GROUP" TextAlignment="Center" FontWeight="Bold" Margin="0,10,0,0"/>
+
+		  <TextBlock Grid.Row="4" Grid.Column="0" Text="REF:"/>
+		  <TextBlock Grid.Row="4" Grid.Column="1"><Run Text="SACLANT-INTEL-85-0629-"/><Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName]}"/></TextBlock>
+		  <TextBlock Grid.Row="4" Grid.Column="2" Text="DATE:"/>
+		  <TextBlock Grid.Row="4" Grid.Column="3" Text="29 JUN 1985"/>
+
+		  <TextBlock Grid.Row="6" Grid.Column="0" Text="FROM:"/>
+		  <TextBlock Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" Text="Director of Intelligence, SACLANT"/>
+		  <TextBlock Grid.Row="7" Grid.Column="0" Text="TO:"/>
+		  <TextBlock Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="3" Text="COMSUBLANT / COMNAVAIRLANT / CINCLANTFLT"/>
+
+		  <TextBlock Grid.Row="9" Grid.Column="0" Text="SUBJECT:" FontWeight="Bold"/>
+		  <TextBlock Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" FontWeight="Bold" TextWrapping="Wrap"><Run Text="Threat Assessment — "/><Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName]}"/><Run Text=", Soviet Surface Strike Group, Norwegian Sea"/></TextBlock>
+		</Grid>
+
+		<!-- Body -->
+		<TextBlock Grid.Row="2" TextWrapping="Wrap" LineHeight="26">
+		  <LineBreak/>
+		  <Run FontWeight="Bold">1.  SITUATION SUMMARY</Run>
+		  <LineBreak/>
+		  <LineBreak/>
+		  A Soviet Northern Fleet surface strike group designated <Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName]}" FontWeight="Bold"/> has been operating in the Norwegian Sea and North Atlantic since approximately 5 June 1985. The group is built around a Soviet surface combatant of battlecruiser or cruiser class, and has demonstrated sustained high-tempo operations over a period exceeding three weeks. The task force has successfully evad
+		  <LineBreak/>
+		  <LineBreak/>
+		  <Run FontWeight="Bold">2.  COMMANDING OFFICER</Run>
+		  <LineBreak/>
+		  <LineBreak/>
+		  GRU and SIGINT analysis indicates the task force is commanded by
+		  <Run Text="a senior Northern Fleet surface warfare officer" FontWeight="Bold"/>,
+		  assessed as highly competent and operationally aggressive. This officer has demonstrated a consistent willingness to accept engagement risk and has shown above-average tactical adaptability under pressure. SACLANT considers this individual to be the primary factor in the task force's operational success.
+		  <LineBreak/>
+		  <LineBreak/>
+		  <Run FontWeight="Bold">3.  CAPABILITIES ASSESSMENT</Run>
+		  <LineBreak/>
+		  <LineBreak/>
+		  a.  The task force flagship carries an estimated complement of long-range anti-ship cruise missiles with ranges in excess of 500 km. Reload status is unknown but assessed as partially degraded following recent engagements.
+		  <LineBreak/>
+		  <LineBreak/>
+		  b.  The task force almost certainly includes one or more OSCAR or VICTOR class submarines operating in a screening role. Submarine participation in the HX-412 attack is confirmed.
+		  <LineBreak/>
+		  <LineBreak/>
+		  c.  The task force flagship's area-defence SAM system represents a threat to friendly aircraft at ranges up to 90 km. ASW helicopter assets embarked are assessed as KA-27 HELIX.
+		  <LineBreak/>
+		  <LineBreak/>
+		  <Run FontWeight="Bold">4.  ASSESSMENT AND RECOMMENDATION</Run>
+		  <LineBreak/>
+		  <LineBreak/>
+		  SACLANT assesses that <Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName]}" FontWeight="Bold"/> will attempt to exploit the degraded state of NATO's Norwegian Sea coverage — particularly following the suppression of Keflavik — to push reinforcements through the GIUK Gap. USS ENTERPRISE battle group should intercept by 28 June.
+		  <LineBreak/>
+		  <LineBreak/>
+		  This command assesses the probability of successful interception at 60-70% given current dispositions. However, the competence demonstrated by the Soviet commander throughout this operation warrants extreme caution. Underestimating this adversary has proven costly.
+		  <LineBreak/>
+		  <LineBreak/>
+		  Destroy <Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName]}"/>. At any cost.
+		  <LineBreak/>
+		  <LineBreak/>
+		  <Run FontStyle="Italic">— VADM R.J. Hilton, Director of Intelligence, SACLANT</Run>
+		  <LineBreak/>
+		  <LineBreak/>
+		</TextBlock>
+
+		<!-- Footer -->
+		<TextBlock Grid.Row="3" Text="TOP SECRET / ATOMAL" TextAlignment="Center" FontWeight="Bold"/>
+		<TextBlock Grid.Row="4" Text="HANDLE VIA ATOMAL CHANNELS ONLY — DO NOT RELEASE TO NON-NATO NATIONALS" TextAlignment="Center" FontSize="12" Margin="0,4,0,0"/>
+	  </Grid>
+	</Border>
+  </Border>
+</Viewbox>
+</Page>
